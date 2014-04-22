@@ -18,9 +18,4 @@ class HomeController extends BaseController {
 		return View::make('pages.equipment');
 	}
 
-	public function nope()
-	{
-		return View::make('pages.nope');
-	}
-
 }

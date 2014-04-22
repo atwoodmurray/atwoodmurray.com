@@ -1,1 +1,0 @@
-Launching at noon today.

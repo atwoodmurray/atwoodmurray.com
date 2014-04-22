@@ -6,7 +6,5 @@
 |--------------------------------------------------------------------------
 */
 
-//Route::get('/', 'HomeController@index');
-//Route::get('/equipment', 'HomeController@equipment');
-
-Route::get('/', 'HomeController@nope');
+Route::get('/', 'HomeController@index');
+Route::get('/equipment', 'HomeController@equipment');
