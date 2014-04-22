@@ -6,16 +6,15 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Title</title>
-    <meta name="description" content="Description">
+    <title>Atwood Murray</title>
+    <meta name="description" content="An audio engineer in Harford County, Maryland that specializes in live sound, recording, mixing/mastering, and composing.">
     <meta name="viewport" content="width=device-width">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta property="og:title" content="Title" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="URL" />
-    <meta property="og:type" content="" />
-    <meta property="og:description" content="Description" />
+    <meta property="og:title" content="Atwood Murray" />
+    <meta property="og:image" content="http://atwoodmurray.com/assets/img/right_atwood.jpg" />
+    <meta property="og:url" content="http://atwoodmurray.com/" />
+    <meta property="og:description" content="An audio engineer in Harford County, Maryland that specializes in live sound, recording, mixing/mastering, and composing." />
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
@@ -27,6 +26,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/apple-touch-icon-144x144.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/apple-touch-icon-152x152.png" />
 
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/assets/css/styles.css">
     <script src="/assets/js/modernizr.min.js"></script>
 </head>

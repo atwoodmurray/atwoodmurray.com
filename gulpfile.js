@@ -29,7 +29,7 @@ gulp.task('css', ['less'], function() {
 gulp.task('js', function() {
 	gulp.src([_js+'jquery.min.js',
 		_js+'bootstrap.min.js',
-		_js+'jquery.retinise.min.js',
+		_js+'jquery.simple-text-rotator.js',
 		_js+'main.js'])
 		.pipe(concat('scripts.js'))
 		.pipe(gulp.dest(js_));

@@ -1,8 +1,8 @@
 {
-  "name": "Template",
+  "name": "atwoodmurray.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ettio/template"
+    "url": "https://github.com/atwoodmurray/atwoodmurray.com"
   },
   "dependencies": {
     "gulp": "~3.5.5",

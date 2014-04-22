@@ -4,6 +4,25 @@
 
 /*
 |--------------------------------------------------------------------------
+| Site Colors
+|--------------------------------------------------------------------------
+*/
+
+@white:    #f0f0f0;
+@blue:     rgb(66, 69, 77);
+@op:       rgba(128, 36, 41, .6);
+@op_g:     rgba(84, 127, 111, .5);
+
+/*
+|--------------------------------------------------------------------------
+| Site Sizes
+|--------------------------------------------------------------------------
+*/
+
+@tablet:   768px;
+
+/*
+|--------------------------------------------------------------------------
 | Basic Attributes
 |--------------------------------------------------------------------------
 */
@@ -11,4 +30,423 @@
 html, body {
 	height: 100%;
 	width: 100%;
+}
+
+body {
+	font-family: 'Lato';
+	background-color: @white;
+	color: @blue;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 64px;
+	margin: 0;
+
+	@media(max-width: @tablet) {
+		font-size: 32px;
+	}
+}
+
+hr {
+	border-color: @blue;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Sections
+|--------------------------------------------------------------------------
+*/
+
+.section {
+	padding-top: 25px;
+	margin: auto;
+
+	img {
+		margin: auto;
+	}
+
+	h3 {
+		text-align: center;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.item {
+		margin: 10px 0;
+		text-align: center;
+	}
+
+	&.last {
+		padding-bottom: 25px;
+	}
+}
+
+/*
+|--------------------------------------------------------------------------
+| Contact
+|--------------------------------------------------------------------------
+*/
+
+.twitter,
+.linkedin,
+.facebook,
+.instagram,
+.email,
+.blog {
+	padding: 25px;
+	font-size: 64px;
+	color: @white;
+	margin: 10px;
+}
+
+.twitter {
+	background-color: #4099FF;
+
+	&:hover {
+		background-color: darken(#4099FF, 10%);
+	}
+}
+
+.facebook {
+	background-color: #3b5998;
+
+	&:hover {
+		background-color: darken(#3b5998, 10%);
+	}
+}
+
+.linkedin {
+	background-color: #4875B4;
+
+	&:hover {
+		background-color: darken(#4875B4, 10%);
+	}
+}
+
+.instagram {
+	background-color: #517fa4;
+
+	&:hover {
+		background-color: darken(#517fa4, 10%);
+	}
+}
+
+.email {
+	background-color: #3a556b;
+
+	&:hover {
+		background-color: darken(#3a556b, 10%);
+	}
+}
+
+.blog {
+	background-color: #18364e;
+
+	&:hover {
+		background-color: darken(#18364e, 10%);
+	}
+}
+
+/*
+|--------------------------------------------------------------------------
+| Menu
+|--------------------------------------------------------------------------
+*/
+
+.menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+
+	background-color: @blue;
+	padding: 10px 11px;
+	line-height: 10px;
+	font-size: 20px;
+	color: @white;
+	cursor: pointer;
+
+	&:hover {
+		background-color: darken(@blue, 10%);
+	}
+
+	@media(min-width: @tablet) {
+		position: fixed;
+	}
+}
+
+/*
+|--------------------------------------------------------------------------
+| Pages
+|--------------------------------------------------------------------------
+*/
+
+.index {
+	background: url(../img/right_atwood.jpg) no-repeat top center;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+
+	.index-text {
+		font-size: 64px;
+		font-weight: 700;
+		color: @white;
+		margin-top: 100px;
+
+		p {
+			font-size: 24px;
+			margin: 0;
+			padding: 0;
+			font-weight: normal;
+
+			.u {
+				color: transparent;
+				font-size: 10px;
+			}
+
+			@media(max-width: @tablet) {
+				font-size: 18px;
+			}
+		}
+
+		@media(max-width: @tablet) {
+			margin-top: 25px;
+			font-size: 32px;
+		}
+	}
+}
+
+.desk {
+	background: url(../img/desk.jpg) no-repeat top center;
+	background-size: cover;
+	background-position: fixed;
+	height: 100%;
+	width: 100%;
+
+	.cover {
+		width: 100%;
+		height: 100%;
+		background-color: @op;
+		position: relative;
+	}
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	height: 30px;
+	margin-top: -15px;
+	left: 50%;
+	margin-left: -100px;
+
+	a {
+		text-decoration: none;
+
+		&:focus,
+		&:active {
+			outline: none;
+		}
+
+		.button {
+			background-color: @blue;
+			color: @white;
+			padding: 15px 25px;
+			width: 200px;
+			text-align: center;
+			cursor: pointer;
+
+			&:hover {
+				background-color: darken(@blue, 10%);
+			}
+		}
+	}
+}
+
+.equipment {
+	background: url(../img/equipment.jpg) no-repeat top center;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	position: relative;
+
+	.cover {
+		width: 100%;
+		height: 100%;
+		background-color: @op;
+	}
+
+	.equipment-text {
+		font-size: 64px;
+		font-weight: 700;
+		color: @white;
+
+		position: absolute;
+		left: 50%;
+		top: 50%;
+
+		width: 310px;
+		height: 75px;
+		line-height: 64px;
+		margin-left: -160px;
+		margin-top: -38px;
+
+		@media(max-width: @tablet) {
+			font-size: 32px;
+			line-height: 32px;
+			height: 36px;
+			width: 160px;
+			margin-left: -80px;
+			margin-top: -18px;
+		}
+	}
+}
+
+/*
+|--------------------------------------------------------------------------
+| Footer
+|--------------------------------------------------------------------------
+*/
+
+.footer {
+	background-color: @blue;
+	padding: 20px;
+	color: @white;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Errors
+|--------------------------------------------------------------------------
+*/
+
+.error {
+	background: url(../img/grump.jpg) no-repeat center center;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+
+	h1 {
+		color: @white;
+		margin-top: 100px;
+
+		@media(max-width: @tablet) {
+			margin-top: 25px;
+		}
+	}
+}
+
+/*
+|--------------------------------------------------------------------------
+| Simple Text Rotator CSS
+|--------------------------------------------------------------------------
+*/
+
+.rotating {
+  display: inline-block;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
+  -moz-transform: rotateX(0) rotateY(0) rotateZ(0);
+  -ms-transform: rotateX(0) rotateY(0) rotateZ(0);
+  -o-transform: rotateX(0) rotateY(0) rotateZ(0);
+  transform: rotateX(0) rotateY(0) rotateZ(0);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-origin-x: 50%;
+}
+
+.rotating.flip {
+  position: relative;
+}
+
+.rotating .front, .rotating .back {
+  left: 0;
+  top: 0;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.rotating .front {
+  position: absolute;
+  display: inline-block;
+  -webkit-transform: translate3d(0,0,1px);
+  -moz-transform: translate3d(0,0,1px);
+  -ms-transform: translate3d(0,0,1px);
+  -o-transform: translate3d(0,0,1px);
+  transform: translate3d(0,0,1px);
+}
+
+.rotating.flip .front {
+  z-index: 1;
+}
+
+.rotating .back {
+  display: inline-block;
+  opacity: 0;
+}
+
+.rotating.spin {
+  -webkit-transform: rotate(360deg) scale(0);
+  -moz-transform: rotate(360deg) scale(0);
+  -ms-transform: rotate(360deg) scale(0);
+  -o-transform: rotate(360deg) scale(0);
+  transform: rotate(360deg) scale(0);
+}
+
+.rotating.flip .back {
+  z-index: 2;
+  display: block;
+  opacity: 1;
+  
+  -webkit-transform: rotateY(180deg) translate3d(0,0,0);
+  -moz-transform: rotateY(180deg) translate3d(0,0,0);
+  -ms-transform: rotateY(180deg) translate3d(0,0,0);
+  -o-transform: rotateY(180deg) translate3d(0,0,0);
+  transform: rotateY(180deg) translate3d(0,0,0);
+}
+
+.rotating.flip.up .back {
+  -webkit-transform: rotateX(180deg) translate3d(0,0,0);
+  -moz-transform: rotateX(180deg) translate3d(0,0,0);
+  -ms-transform: rotateX(180deg) translate3d(0,0,0);
+  -o-transform: rotateX(180deg) translate3d(0,0,0);
+  transform: rotateX(180deg) translate3d(0,0,0);
+}
+
+.rotating.flip.cube .front {
+  -webkit-transform: translate3d(0,0,100px) scale(0.9,0.9);
+  -moz-transform: translate3d(0,0,100px) scale(0.85,0.85);
+  -ms-transform: translate3d(0,0,100px) scale(0.85,0.85);
+  -o-transform: translate3d(0,0,100px) scale(0.85,0.85);
+  transform: translate3d(0,0,100px) scale(0.85,0.85);
+}
+
+.rotating.flip.cube .back {
+  -webkit-transform: rotateY(180deg) translate3d(0,0,100px) scale(0.9,0.9);
+  -moz-transform: rotateY(180deg) translate3d(0,0,100px) scale(0.85,0.85);
+  -ms-transform: rotateY(180deg) translate3d(0,0,100px) scale(0.85,0.85);
+  -o-transform: rotateY(180deg) translate3d(0,0,100px) scale(0.85,0.85);
+  transform: rotateY(180deg) translate3d(0,0,100px) scale(0.85,0.85);
+}
+
+.rotating.flip.cube.up .back {
+  -webkit-transform: rotateX(180deg) translate3d(0,0,100px) scale(0.9,0.9);
+  -moz-transform: rotateX(180deg) translate3d(0,0,100px) scale(0.85,0.85);
+  -ms-transform: rotateX(180deg) translate3d(0,0,100px) scale(0.85,0.85);
+  -o-transform: rotateX(180deg) translate3d(0,0,100px) scale(0.85,0.85);
+  transform: rotateX(180deg) translate3d(0,0,100px) scale(0.85,0.85);
 }
